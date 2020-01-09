@@ -2,7 +2,12 @@
 	<section>
 		<h2> {{this.greeting}}</h2>
 		<h4> {{this.introMessageTyped}} <span>|</span> </h4>
-		<small> Front end development / UI and UX-Designer </small>	
+		<small> Front end development / UI and UX-Designer </small>
+		<div class="social-container">
+			<a href="https://github.com/Mumis" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/emilwertwein/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+			<a href="https://twitter.com/wertwein" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>	
+		</div>
 		<div class="mouse">
 			<span> </span>
 		</div>
@@ -42,7 +47,7 @@ export default {
 					this.greeting = this.greetingHourly.morning;
 				}
 				else {
-					this.greeting = this.greetingList[Math.round(Math.random() * this.greetingList.length - 1)].text;
+					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
 				}
 			}
 			else if (hour >= 12 && hour <= 17) {
@@ -50,14 +55,14 @@ export default {
 					this.greeting = this.greetingHourly.afternoon;
 				}
 				else {
-					this.greeting = this.greetingList[Math.round(Math.random() * this.greetingList.length - 1)].text;
+					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
 				}
 			} else {
 				if (Math.random() * 3 < 2) {
 					this.greeting = this.greetingHourly.evening;
 				}
 				else {
-					this.greeting = this.greetingList[Math.round(Math.random() * this.greetingList.length - 1)].text;
+					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
 				}
 			}
 		},
@@ -84,13 +89,22 @@ export default {
     100% { opacity: 0; }
 	}
 
-	span {
-		animation: blink;
-		animation-duration: 0.9s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-delay: 2.7s;
+	@keyframes fadeIn {
+		0% { opacity: 0}
+    100% { opacity: 1}
 	}
+
+	@keyframes scroll {
+		0% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		100% {
+			opacity: 0;
+			transform: translateY(15px);
+		}
+	}
+
 
 	section {
 		display: flex;
@@ -101,9 +115,67 @@ export default {
 		height: 100vh;
 		padding: 0 4px;
 		background-color: rgb(255, 218, 208);
+		transform: skewY(2deg);
+		transform-origin: top right;
+		box-shadow: inset 0px -25px 25px -25px rgba(0,0,0,0.75);
+		outline: 1px solid transparent;
+	}
+
+	section > * {
+		transform: skewY(-2deg);
+		animation: fadeIn;
+    animation-duration: 2s;
+	}
+
+	span {
+		animation: blink;
+		animation-duration: 0.9s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+		animation-delay: 2.7s;
 	}
 
 	h2 {
-		margin-bottom: 15px;
+		margin-bottom: 20px;
+	}
+
+	.mouse {
+		position: absolute;
+    bottom: 50px;
+    width: 28px;
+    height: 48px;
+    border-radius: 11px 11px 15px 15px;
+    border: 1px solid #4A2A18;
+    transition: opacity .4s;
+	}
+
+	.mouse > span {
+		display: block;
+		margin: 6px auto;
+		width: 2px;
+		height: 5px;
+		border-radius: 4px;
+		background: #4A2A18;
+		border: 1px solid transparent;
+		animation: scroll;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+  }
+
+	.social-container {
+		margin-top: 50px;
+	}
+
+	.social-container > a {
+		margin: 0 15px;
+		width: 60px;
+		font-size: 25px;
+		color: #4A2A18;
+		transition: color .2s;
+	}
+
+	.social-container > a:hover {
+		color: #B2704E;
 	}
 </style>

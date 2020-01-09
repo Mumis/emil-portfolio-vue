@@ -1,14 +1,28 @@
 <template>
-  <Home />
+  <main>
+    <Home />
+    <About />
+    <Projects />
+    <Contact />
+    <Navigation />
+  </main>
 </template>
 
 <script>
 import Home from "../components/Home.vue";
+import About from "../components/About.vue";
+import Projects from "../components/Projects.vue";
+import Contact from "../components/Contact.vue";
+import Navigation from "../components/Navigation.vue";
 
 export default {
   name: 'Index',
   components: {
-      Home
+      Home,
+      About,
+      Projects,
+      Contact,
+      Navigation,
   }
 }
 </script>
