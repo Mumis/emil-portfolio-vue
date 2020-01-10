@@ -1,5 +1,5 @@
 <template>
-	<section>
+	<section id="home">
 		<h2> {{this.greeting}}</h2>
 		<h4> {{this.introMessageTyped}} <span>|</span> </h4>
 		<small> Front end development / UI and UX-Designer </small>
@@ -29,11 +29,6 @@ export default {
 				{ id: 7, text: "Greetings!" },
 				{ id: 8, text: "Hej Hej!" },
 			],
-			greetingHourly: {
-				morning: "Good Morning,",
-				afternoon: "Good Afternoon,",
-				evening: "Good Evening," 
-			},
 			greeting: "",
 			introMessage: "I'm Emil, a web developer.",
 			introMessageTyped: "",
@@ -45,7 +40,7 @@ export default {
 			const hour = now.getHours();
 			if (hour < 12) {
 				if (Math.random() * 3 < 2) {
-					this.greeting = this.greetingHourly.morning;
+					this.greeting = "Good Morning,";
 				}
 				else {
 					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
@@ -53,14 +48,14 @@ export default {
 			}
 			else if (hour >= 12 && hour <= 17) {
 				if (Math.random() * 3 < 2) {
-					this.greeting = this.greetingHourly.afternoon;
+					this.greeting = "Good Afternoon,";
 				}
 				else {
 					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
 				}
 			} else {
 				if (Math.random() * 3 < 2) {
-					this.greeting = this.greetingHourly.evening;
+					this.greeting = "Good Evening,";
 				}
 				else {
 					this.greeting = this.greetingList[Math.floor(Math.random() * this.greetingList.length)].text;
