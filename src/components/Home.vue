@@ -9,7 +9,7 @@
 			<a href="https://twitter.com/wertwein" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>	
 		</div>
 		<div class="mouse">
-			<span> </span>
+			<span></span>
 		</div>
 	</section>
 </template>

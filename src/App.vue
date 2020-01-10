@@ -16,42 +16,43 @@ export default {
 </script>
 
 <style>
-  * {
-    font-family: 'Ubuntu', sans-serif;
-    color: rgb(178, 112, 78);
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  body {
-    margin: 0;
-  }
-  h1,h2,h3,h4 {
-    color: rgb(74, 42, 24);
-    font-weight: normal;
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-  }
-  h1 {
-    font-size: 45px;
-  }
-  h2 {
-    font-size: 35px;
-  }
-  h3 {
-    font-size: 30px;
-  }
-  h4 {
-    font-size: 25px;
-  }
-  p {
-    font-size: 18px;
-  }
-  a, i {
-    color: #4A2A18;
-  }
-  section {
-    padding: 80px 7px;
-  }
+/* ---- GLOBAL STYLES ---- */
+* {
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(178, 112, 78);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+h1,h2,h3,h4 {
+  color: rgb(74, 42, 24);
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-size: 45px;
+}
+h2 {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 25px;
+}
+p {
+  font-size: 18px;
+}
+a, i {
+  color: #4A2A18;
+}
+section {
+  padding: 80px 7px;
+}
 </style>
