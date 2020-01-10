@@ -1,7 +1,7 @@
 <template>
- <div>
-hej
- </div>
+ <section>
+   Navigation
+ </section>
 </template>
 
 <script>

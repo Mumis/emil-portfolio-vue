@@ -18,6 +18,10 @@ export default {
 <style>
   * {
     font-family: 'Ubuntu', sans-serif;
+    color: rgb(178, 112, 78);
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
     margin: 0;
@@ -27,7 +31,7 @@ export default {
     font-weight: normal;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
+    font-weight: 300;
   }
   h1 {
     font-size: 45px;
@@ -41,7 +45,13 @@ export default {
   h4 {
     font-size: 25px;
   }
-  p,small {
-    color: rgb(178, 112, 78);
+  p {
+    font-size: 18px;
+  }
+  a, i {
+    color: #4A2A18;
+  }
+  section {
+    padding: 80px 7px;
   }
 </style>

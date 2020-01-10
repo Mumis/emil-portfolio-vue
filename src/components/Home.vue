@@ -27,6 +27,7 @@ export default {
 				{ id: 5, text: "Nice to meet you!" },
 				{ id: 6, text: "Aloha!" },
 				{ id: 7, text: "Greetings!" },
+				{ id: 8, text: "Hej Hej!" },
 			],
 			greetingHourly: {
 				morning: "Good Morning,",
@@ -82,100 +83,88 @@ export default {
 </script>
 
 <style scoped>
-	@keyframes blink {
-    0% { opacity: 1; }
-    49% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 0; }
+@keyframes blink {
+0% { opacity: 1; }
+49% { opacity: 1; }
+50% { opacity: 0; }
+100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+0% { opacity: 0}
+100% { opacity: 1}
+}
+
+@keyframes scroll {
+	0% {
+		opacity: 1;
+		transform: translateY(0);
 	}
-
-	@keyframes fadeIn {
-		0% { opacity: 0}
-    100% { opacity: 1}
+	100% {
+		opacity: 0;
+		transform: translateY(15px);
 	}
-
-	@keyframes scroll {
-		0% {
-			opacity: 1;
-			transform: translateY(0);
-		}
-		100% {
-			opacity: 0;
-			transform: translateY(15px);
-		}
-	}
-
-
-	section {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		height: 100vh;
-		padding: 0 4px;
-		background-color: rgb(255, 218, 208);
-		transform: skewY(2deg);
-		transform-origin: top right;
-		box-shadow: inset 0px -25px 25px -25px rgba(0,0,0,0.75);
-		outline: 1px solid transparent;
-	}
-
-	section > * {
-		transform: skewY(-2deg);
-		animation: fadeIn;
-    animation-duration: 2s;
-	}
-
-	span {
-		animation: blink;
-		animation-duration: 0.9s;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-		animation-delay: 2.7s;
-	}
-
-	h2 {
-		margin-bottom: 20px;
-	}
-
-	.mouse {
-		position: absolute;
-    bottom: 50px;
-    width: 28px;
-    height: 48px;
-    border-radius: 11px 11px 15px 15px;
-    border: 1px solid #4A2A18;
-    transition: opacity .4s;
-	}
-
-	.mouse > span {
-		display: block;
-		margin: 6px auto;
-		width: 2px;
-		height: 5px;
-		border-radius: 4px;
-		background: #4A2A18;
-		border: 1px solid transparent;
-		animation: scroll;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-		animation-timing-function: linear;
-  }
-
-	.social-container {
-		margin-top: 50px;
-	}
-
-	.social-container > a {
-		margin: 0 15px;
-		width: 60px;
-		font-size: 25px;
-		color: #4A2A18;
-		transition: color .2s;
-	}
-
-	.social-container > a:hover {
-		color: #B2704E;
-	}
+}
+section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	background-color: rgb(255, 218, 208);
+	transform: skewY(2deg);
+	transform-origin: top right;
+	box-shadow: inset 0px -25px 25px -25px rgba(0,0,0,0.50);
+	outline: 1px solid transparent;
+	padding: 0 5px;
+}
+section > * {
+	transform: skewY(-2deg);
+	animation: fadeIn;
+	animation-duration: 2s;
+}
+span {
+	animation: blink;
+	animation-duration: 0.9s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: 2.7s;
+}
+h2 {
+	margin-bottom: 20px;
+}
+.mouse {
+	position: absolute;
+	bottom: 50px;
+	width: 28px;
+	height: 48px;
+	border-radius: 11px 11px 15px 15px;
+	border: 1px solid #4A2A18;
+	transition: opacity .4s;
+}
+.mouse > span {
+	display: block;
+	margin: 6px auto;
+	width: 2px;
+	height: 5px;
+	border-radius: 4px;
+	background: #4A2A18;
+	border: 1px solid transparent;
+	animation: scroll;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.social-container {
+	margin-top: 50px;
+}
+.social-container i {
+	margin: 0 30px;
+	font-size: 25px;
+	transition: color .2s;
+}
+.social-container i:hover {
+	color: #B2704E;
+}
 </style>

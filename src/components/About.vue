@@ -1,7 +1,8 @@
 <template>
- <div>
-   hej
- </div>
+ <section>
+   <h2> ABOUT ME </h2>
+   <p> Hello! I'm a front-end developer and I'm currently looking for an internship. I wish to create functional and inspirational websites for my future clients. Check out some of my <a href="#projects">projects</a> and don't hesitate to <a href="#contact">contact</a> if you would like to know more! </p>
+ </section>
 </template>
 
 <script>
@@ -10,6 +11,13 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+p {
+  max-width: 700px;
+}
 </style>
