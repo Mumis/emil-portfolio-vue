@@ -3,7 +3,7 @@
   <ul>
     <li v-for="project in projects" v-bind:key=project.id> <project :project="project"/></li>
   </ul>
-  <a>Like what you see? Check out my other projects!</a>
+  <!-- <a>Like what you see? Check out my other projects!</a> -->
  </section>
 </template>
 

@@ -32,21 +32,15 @@ article{
   text-align: center;
   height: 640px;
   background-image: linear-gradient(rgba(253,193,104,1)-50%, rgba(251,128,128,1));
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
 }
 article * {
   transform: skewY(-2deg);
   color: white;
 }
-img {
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%) skewY(-2deg);
-  max-width: 767px;
-  width: 100%;
-  opacity: 0.6;
-  transition: 0.3s;
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+article:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 article:hover > img {
   opacity: 0.9;
@@ -59,6 +53,17 @@ article:hover i {
   background: linear-gradient(rgba(253,193,104,1)-50%, rgba(251,128,128,1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+img {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) skewY(-2deg);
+  max-width: 767px;
+  width: 100%;
+  opacity: 0.3;
+  transition: 0.3s;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 p {
   font-size: 20px;
@@ -80,6 +85,11 @@ a:hover > i {
   }
   article:hover > p, article:hover > h3 {
     display: block;
+  }
+  article:hover i {
+  color: white;
+  background: none;
+  -webkit-text-fill-color: inherit;
   }
 }
 </style>

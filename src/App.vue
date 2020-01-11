@@ -25,6 +25,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  position: relative;
   margin: 0;
 }
 h1,h2,h3,h4 {
