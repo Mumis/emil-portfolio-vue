@@ -1,9 +1,13 @@
 <template>
  <section id="projects">
   <ul>
-    <li v-for="project in projects" v-bind:key=project.id> <project :project="project"/></li>
+    <li v-for="project in projects" v-bind:key=project.id><project :project="project"/></li>
+    <a>  
+      <p>
+        Want to see more? Go to my <span class="highlighted">collection</span>.
+      </p>
+    </a>
   </ul>
-  <!-- <a>Like what you see? Check out my other projects!</a> -->
  </section>
 </template>
 
@@ -20,7 +24,7 @@ export default {
   data: function() {
     return {
       projects: [
-        { id: 0, title: "Smash Arenas", text: "An arena finder using firebase for the game Super Smash Bros. Ultimate.", page_url: "http://smasharenas.com", git_url: "https://github.com/Mumis/Smash-arenas", image:smasharenas},
+        { id: 0, title: "Smash arenas", text: "An arena finder using firebase for the game Super Smash Bros. Ultimate.", page_url: "http://smasharenas.com", git_url: "https://github.com/Mumis/Smash-arenas", image:smasharenas},
         { id: 1, title: "Personal blog", text: "A simple but elegant blog. All content can be customized with the integrated CMS.", page_url: "https://blog.emil.wertwein.com/", git_url: "https://github.com/Mumis/Simple-blog", image:personalblog},
         { id: 2, title: "Prometron", text: "A web multiplayer game, where players race against opponents whilst avoiding their tracks.", page_url: "https://prometron.wertwein.com/", git_url: "https://github.com/Mumis/EmilWertwein-Prometron", image:personalblog}
       ]
@@ -39,6 +43,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -47,6 +52,19 @@ li {
   width: 360px;
   margin: 10px 0;
 }
+a {
+  position: absolute;
+  bottom: 20px;
+}
+a:hover {
+  cursor: pointer;
+}
+a:hover .highlighted {
+  transform: scale(2);
+}
+.highlighted {
+  color: rgb(74, 42, 24);
+}
 @media only screen and (max-width: 767px) {
   section {
     padding: 0;
@@ -54,6 +72,9 @@ li {
   li {
     width: 100%;
     margin: 0;
+  }
+  a {
+    display: none;
   }
 }
 </style>

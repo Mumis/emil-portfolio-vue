@@ -1,7 +1,7 @@
 <template>
 	<section id="home">
-		<h2> {{this.greeting}}</h2>
-		<h4> {{this.introMessageTyped}} <span>|</span> </h4>
+		<h2>{{this.greeting}}</h2>
+		<h4>{{this.introMessageTyped}}<span>|</span></h4>
 		<small> Front end development / UI and UX-Designer </small>
 		<div class="social-container">
 			<a href="https://github.com/Mumis" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
@@ -64,9 +64,9 @@ export default {
 		},
 		startTypeIntro: function() {
 			for (let i in this.introMessage) {
-					setTimeout(() => {
-							this.introMessageTyped = this.introMessageTyped + this.introMessage[i];
-					}, 130*i);
+				setTimeout(() => {
+						this.introMessageTyped = this.introMessageTyped + this.introMessage[i];
+				}, 130*i);
 			}
 		}
 	},
