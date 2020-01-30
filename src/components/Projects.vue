@@ -2,12 +2,10 @@
  <section id="projects">
   <ul>
     <li v-for="project in projects" v-bind:key=project.id><project :project="project"/></li>
-    <a>  
-      <p>
-        Want to see more? Go to my <span class="highlighted">collection</span>.
-      </p>
-    </a>
   </ul>
+    <!-- <a>  
+        Want to see more? Go to my <span class="highlighted">collection</span>.
+    </a> -->
  </section>
 </template>
 
@@ -55,15 +53,14 @@ li {
 a {
   position: absolute;
   bottom: 20px;
+  transform: skewY(-2deg);
+  color: rgb(178, 112, 78);
 }
 a:hover {
   cursor: pointer;
 }
 a:hover .highlighted {
   transform: scale(2);
-}
-.highlighted {
-  color: rgb(74, 42, 24);
 }
 @media only screen and (max-width: 767px) {
   section {

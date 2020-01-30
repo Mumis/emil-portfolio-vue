@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   role="img"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg6267"
+   sodipodi:docname="firebase.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata6273">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6271" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview6269"
+     showgrid="false"
+     inkscape:zoom="9.8333333"
+     inkscape:cx="10.677966"
+     inkscape:cy="12"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6830" />
+  <title
+     id="title6263">Firebase icon</title>
+  <g
+     id="g6830">
+    <path
+       style="fill:#ffa50e;fill-opacity:1"
+       d="M 3.89,15.673 6.255,0.461 C 6.333448,-0.05571609 7.0256967,-0.17302325 7.27,0.289 L 9.813,5.06 Z"
+       id="path6836" />
+    <path
+       style="fill:#ffca2a;fill-opacity:1"
+       d="M 20.685,19.364 18.433,5.365 C 18.359748,4.9308708 17.827438,4.7598125 17.515,5.07 l -14.2,14.294 7.857,4.428 c 0.492777,0.276855 1.094223,0.276855 1.587,0 z"
+       id="path6834" />
+    <path
+       style="fill:#ffa50e;fill-opacity:1"
+       d="M 14.3,7.148 12.48,3.666 c -0.202444,-0.3873129 -0.75703,-0.3870372 -0.96,0 L 3.53,17.984 Z"
+       id="path6265" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="display:inline" />
+</svg>

@@ -56,4 +56,7 @@ a, i {
 section {
   padding: 80px 7px;
 }
+.highlighted {
+  color: rgb(74, 42, 24);
+}
 </style>
