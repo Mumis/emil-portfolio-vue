@@ -87,15 +87,19 @@ ul {
 }
 li {
     margin: 20px 20px;
-    flex: 1 0 21%;
     text-align: center;
     transition: .3;
+}
+li:hover img {
+  opacity: .5;
 }
 img {
   height: 50px;
   transition: opacity 0.3s;
 }
-li:hover img {
-  opacity: .5;
+@media only screen and (max-width: 767px) {
+  a {
+    flex-basis: 50%;
+  }
 }
 </style>
