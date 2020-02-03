@@ -48,13 +48,13 @@ h4 {
   font-size: 25px;
 }
 p {
-  font-size: 18px;
+  font-size: 16px;
 }
 a, i {
   color: #4A2A18;
 }
 section {
-  padding: 80px 7px;
+  padding: 80px 20px;
 }
 .highlighted {
   color: rgb(74, 42, 24);

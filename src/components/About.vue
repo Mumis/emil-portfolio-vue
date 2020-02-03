@@ -1,8 +1,10 @@
 <template>
  <section id="about">
    <h2> About me </h2>
-   <p>Hello! I'm a front-end developer and I'm currently looking for an internship. I wish to create functional and inspirational websites for my future clients. Check out some of my <a href="#projects">projects</a> and don't hesitate to <a href="#contact">contact</a> if you would like to know more!</p>
-   <p>These are some of the <span class="highlighted">technologies</span> I have worked with:</p>
+   <p>Hello! I'm a front-end developer and I'm currently looking for an internship. I wish to create functional and inspirational websites for my future clients.</p>
+     
+    <p>Check out some of my <a href="#projects">projects</a> and don't hesitate to <a href="#contact">contact</a> if you would like to know more!</p>
+   <p>Some of the <span class="highlighted">technologies</span> and <span class="highlighted">tools</span> I have worked with:</p>
    <ul>
     <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.react" alt="React icon" srcset=""><p>React.js</p></li></a>
     <a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.gatsby" alt="Gatsby icon" srcset=""><p>Gatsby.js</p></li></a>
@@ -12,9 +14,6 @@
     <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.git" alt="Git icon" srcset=""><p>Git</p></li></a>
     <a href="http://https://github.com/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.github" alt="Github icon" srcset=""><p>Github</p></li></a>
     <a href="https://threejs.org/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.three" alt="Three icon" srcset=""><p>Three.js</p></li></a>
-   </ul>
-   <p>These are some of my favorite <span class="highlighted">tools</span>:</p>
-   <ul>
     <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer"><li><img :src="icons.vs" alt="VScode icon" srcset=""><p>Visual studio</p></li></a>
     <a href="https://www.adobe.com" target="_blank" rel="noopener noreferrer"><li><img :src="icons.photoshop" alt="VScode icon" srcset=""><p>Photoshop</p></li></a>
     <a href="https://www.adobe.com" target="_blank" rel="noopener noreferrer"><li><img :src="icons.xd" alt="VScode icon" srcset=""><p>Adobe XD</p></li></a>
@@ -94,7 +93,7 @@ li:hover img {
   opacity: .5;
 }
 img {
-  height: 50px;
+  height: 56px;
   transition: opacity 0.3s;
 }
 @media only screen and (max-width: 767px) {

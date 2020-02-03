@@ -56,7 +56,7 @@ a:hover {
   left: 0;
   transform: translateX(-100%);
   background: white;
-  border: solid white 14px;
+  border: solid white 16px;
   border-right: solid white 7px;
   border-left: solid white 7px;
   border-radius: .25em 0 0 .25em;
