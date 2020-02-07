@@ -66,6 +66,7 @@ img {
   mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 p {
+  height: 10%;
   font-size: 20px;
   margin: 40px 0;
   font-weight: lighter;

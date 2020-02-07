@@ -13,6 +13,7 @@
 import project from "./Project.vue";
 import smasharenas from "../assets/smash-arenas.png";
 import personalblog from "../assets/personal-blog.png";
+import threeMinecraft from "../assets/three-minecraft.png";
 
 export default {
   name: 'Projects',
@@ -24,7 +25,7 @@ export default {
       projects: [
         { id: 0, title: "Smash arenas", text: "An arena finder using firebase for the game Super Smash Bros. Ultimate.", page_url: "http://smasharenas.com", git_url: "https://github.com/Mumis/Smash-arenas", image:smasharenas},
         { id: 1, title: "Personal blog", text: "A simple but elegant blog. All content can be customized with the integrated CMS.", page_url: "https://blog.emil.wertwein.com/", git_url: "https://github.com/Mumis/Simple-blog", image:personalblog},
-        { id: 2, title: "Prometron", text: "A web multiplayer game, where players race against opponents whilst avoiding their tracks.", page_url: "https://prometron.wertwein.com/", git_url: "https://github.com/Mumis/EmilWertwein-Prometron", image:personalblog}
+        { id: 2, title: "Worlds in three.js", text: 'A voxel based "minecraft-like" browser game with randomly generated worlds.', image:threeMinecraft}
       ]
     }
   },
