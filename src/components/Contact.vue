@@ -27,6 +27,7 @@ section {
   display: flex;
   flex-direction: column; 
   align-items: center;
+  padding-bottom: 0;
 }
 ul {
   list-style: none;
@@ -50,6 +51,6 @@ i {
 }
 small {
   font-size: 14px;
-  margin-top: 40px;
+  margin: 30px 0;
 }
 </style>

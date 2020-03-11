@@ -61,7 +61,7 @@ a:hover {
   border-left: solid white 7px;
   border-radius: .25em 0 0 .25em;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(202, 189, 189, 0.12), 0 1px 2px rgba(0,0,0,0.24);
   width: 22px;
   height: 3px;
   background: #4A2A18;
@@ -95,7 +95,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 0 3em rgba(0,0,0,.15);
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
     height: 100%;
     width: 80vw;
     padding: 0;
