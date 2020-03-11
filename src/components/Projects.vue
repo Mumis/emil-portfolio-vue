@@ -83,14 +83,16 @@ a:hover .highlighted {
   transform: scale(2);
 }
 button {
-  font-size: 20px;
-  margin-top: 30px;
-  transform: skewY(-2deg);
+  font-size: 18px;
   color: rgb(74, 42, 24);
   background-color: inherit;
-  border: none;
-  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+  transform: skewY(-2deg);
+  border: solid 1px rgb(74, 42, 24);
+  border-radius: 3px;
   transition: .2s;
+  cursor: pointer;
 }
 button:hover {
   color: rgb(178, 112, 78);

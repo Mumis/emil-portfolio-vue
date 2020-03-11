@@ -1,11 +1,11 @@
 <template>
-  <main>
+  <div>
     <Home />
     <About />
     <Projects />
     <Contact />
     <Navigation />
-  </main>
+  </div>
 </template>
 
 <script>

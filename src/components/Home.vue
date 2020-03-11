@@ -1,5 +1,5 @@
 <template>
-	<section id="home">
+	<header id="home">
 		<h2>{{this.greeting}}</h2>
 		<h4>{{this.introMessageTyped}}<span>|</span></h4>
 		<small> Front end development / UI and UX-Designer </small>
@@ -11,7 +11,7 @@
 		<div class="mouse">
 			<span></span>
 		</div>
-	</section>
+	</header>
 </template>
 
 <script>
@@ -79,15 +79,15 @@ export default {
 
 <style scoped>
 @keyframes blink {
-0% { opacity: 1; }
-49% { opacity: 1; }
-50% { opacity: 0; }
-100% { opacity: 0; }
+	0% { opacity: 1; }
+	49% { opacity: 1; }
+	50% { opacity: 0; }
+	100% { opacity: 0; }
 }
 
 @keyframes fadeIn {
-0% { opacity: 0}
-100% { opacity: 1}
+	0% { opacity: 0}
+	100% { opacity: 1}
 }
 
 @keyframes scroll {
@@ -100,7 +100,7 @@ export default {
 		transform: translateY(15px);
 	}
 }
-section {
+header {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -114,7 +114,7 @@ section {
 	outline: 1px solid transparent;
 	padding: 0 5px;
 }
-section > * {
+header > * {
 	transform: skewY(-2deg);
 	animation: fadeIn;
 	animation-duration: 2s;
@@ -140,11 +140,11 @@ h2 {
 }
 .mouse > span {
 	display: block;
-	margin: 6px auto;
 	width: 2px;
 	height: 5px;
-	border-radius: 4px;
+	margin: 6px auto;
 	background: #4A2A18;
+	border-radius: 4px;
 	border: 1px solid transparent;
 	animation: scroll;
 	animation-duration: 1s;
@@ -155,8 +155,8 @@ h2 {
 	margin-top: 50px;
 }
 .social-container i {
-	margin: 0 30px;
 	font-size: 25px;
+	margin: 0 30px;
 	transition: color .2s;
 }
 .social-container i:hover {

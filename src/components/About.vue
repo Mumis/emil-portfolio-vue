@@ -80,13 +80,13 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   text-align: left;
+	width: 100%;
   list-style: none;
   padding: 0;
-	width: 100%;
 }
 li {
-    margin: 20px 20px;
     text-align: center;
+    margin: 20px 20px;
     transition: .3;
 }
 li:hover img {

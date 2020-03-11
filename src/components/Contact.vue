@@ -1,5 +1,5 @@
 <template>
- <section id="contact">
+ <footer id="contact">
   <h2>Contact</h2>
   <ul>
     <li><i class="fas fa-user"></i>Emil Wertwein</li>
@@ -13,7 +13,7 @@
     <a href="https://twitter.com/wertwein" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>	
   </div>
   <small> Copyright &copy; 2020 Emil Wertwein </small>
- </section>
+ </footer>
 </template>
 
 <script>
@@ -23,28 +23,28 @@ export default {
 </script>
 
 <style scoped>
-section {
+footer {  
   display: flex;
   flex-direction: column; 
   align-items: center;
-  padding-bottom: 0;
+  padding: 80px 20px 0 20px;
 }
 ul {
   list-style: none;
   padding: 0;
 }
 li {
-  margin: 15px 0;
   color: rgb(74, 42, 24);
+  margin: 15px 0;
 }
 i {
   width: 20px;
   margin-right: 15px;
 }
 .social-container i {
-	margin: 0 30px;
 	font-size: 25px;
 	transition: color .2s;
+	margin: 0 30px;
 }
 .social-container i:hover {
 	color: #B2704E;

@@ -1,7 +1,5 @@
 <template>
-  <div id="app">
     <Index />
-  </div>
 </template>
 
 <script>
@@ -29,11 +27,11 @@ body {
   margin: 0;
 }
 h1,h2,h3,h4 {
-  color: rgb(74, 42, 24);
   font-weight: normal;
-  margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
+  color: rgb(74, 42, 24);
+  margin: 0;
 }
 h1 {
   font-size: 45px;

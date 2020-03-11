@@ -25,13 +25,13 @@ export default {
 
 <style scoped>
 nav {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  right: 0;
-  padding-top: 20px;
   display: flex;
   justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 20px;
   transition: transform 200ms cubic-bezier(.5, 0, .5, 1);
 }
 img {
@@ -54,38 +54,37 @@ a:hover {
   position: absolute;
   bottom: 60px;
   left: 0;
+  width: 22px;
+  height: 3px;
   transform: translateX(-100%);
-  background: white;
+  background: #4A2A18;
   border: solid white 16px;
   border-right: solid white 7px;
   border-left: solid white 7px;
   border-radius: .25em 0 0 .25em;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(202, 189, 189, 0.12), 0 1px 2px rgba(0,0,0,0.24);
-  width: 22px;
-  height: 3px;
-  background: #4A2A18;
   transition: 100ms, transform 200ms ease-in-out, background 300ms linear;
 }
 #hamburger:before {
   content: '';
   position: absolute;
   right: 0;
+  bottom: 6px;
   width: 18px;
   height: 3px;
   background: #4A2A18;
   transition: transform 500ms ease-in-out;
-  bottom: 6px;
 }
 #hamburger:after {
   content: '';
   position: absolute;
+  top: 6px;
   right: 0;
   width: 18px;
   height: 3px;
   background: #4A2A18;
   transition: transform 500ms ease-in-out;
-  top: 6px;
 }
 @media only screen and (max-width: 767px) {
   #hamburger {
@@ -95,12 +94,12 @@ a:hover {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: 0 0 1em rgba(0,0,0,.2);
     height: 100%;
     width: 80vw;
     padding: 0;
-    transform: translateX(100%);
     background-color: white;
+    transform: translateX(100%);
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
   }
   .open {
     transform: translateX(0);

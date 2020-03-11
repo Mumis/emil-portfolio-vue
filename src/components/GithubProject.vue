@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <li>
     <div>
         <h3>{{project.name}}</h3>
         <p>{{project.description}}</p>
@@ -7,7 +7,7 @@
     <div>
       <a v-bind:href="project.html_url" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
     </div>
-  </article>
+  </li>
 </template>
 
 <script>
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style scoped>
-article {
+li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -31,7 +31,7 @@ article {
 	margin: 10px;
 	background-color: rgba(251,128,128,1);
 }
-article * {
+li * {
 	color: white;
 }
 div {
@@ -45,7 +45,7 @@ a:hover > i {
   transform: scale(1.2);
 }
 @media only screen and (max-width: 767px) {
-	article {
+	li {
 		width: 100%;
 		margin: 0;
 		border-bottom: solid 2px white;
