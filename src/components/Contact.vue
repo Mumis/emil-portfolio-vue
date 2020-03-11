@@ -12,6 +12,7 @@
     <a href="https://www.linkedin.com/in/emilwertwein/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
     <a href="https://twitter.com/wertwein" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>	
   </div>
+  <small> Copyright &copy; 2020 Emil Wertwein </small>
  </section>
 </template>
 
@@ -46,5 +47,9 @@ i {
 }
 .social-container i:hover {
 	color: #B2704E;
+}
+small {
+  font-size: 14px;
+  margin-top: 40px;
 }
 </style>
