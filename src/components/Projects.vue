@@ -46,7 +46,7 @@ export default {
   created() {
     fetch("https://api.github.com/users/mumis/repos")
       .then((response) => response.json())
-      .then((data) => this.githubProjets = data).then(() => console.log(this.githubProjets));
+      .then((data) => this.githubProjets = data);
   }
 }
 </script>
